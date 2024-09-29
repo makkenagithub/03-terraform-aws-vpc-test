@@ -1,6 +1,9 @@
 module "vpc" {
     source = "../03-terraform-aws-vps"
 
+    # to give source from module prepared in GITHUB
+    # source = "git::https://github.com/makkenagithub/03-terraform-aws-vpc.git?ref=main"
+
     # pass the mandatory varable values. We can pass the values directly here or else keep in variables.
     # But its better to use variables.
     project_name = var.project_name
